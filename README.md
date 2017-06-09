@@ -8,6 +8,8 @@ There are two entry-point scripts:
 * `dcgan_train.m`: trains a new model from scratch.
 * `dcgan_generate.m`: generates images by using the trained model.
 
+## Data
+
 First download the dataset from
 http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
 
