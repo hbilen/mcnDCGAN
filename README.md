@@ -1,11 +1,11 @@
 # DCGAN demo
 
 This folder contains an example implementation of DCGAN [1] in
-MatConvNet. The example trains on the CELEB-A data.
+MatConvNet. The example trains on the CELEB-A data [2].
 
 ## Data
 
-First download the dataset in data/celeba folder by using the link
+First download and extract the aligned face images (`img_aligin_celeba.zip`) to `data/celeba` by using the link
 http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
 
 
@@ -35,3 +35,5 @@ something like:
 
 1. *Unsupervised Representation Learning with Deep Convolutional Generative 
     Adversarial Networks*, Alec Radford, Luke Metz, Soumith Chintala, 2016.
+
+2. *Deep learning face attributes in the wild.*, Liu, Z., Luo, P., Wang, X., & Tang, X. Proceedings of the IEEE International Conference on Computer Vision. 2015.
