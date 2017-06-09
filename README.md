@@ -11,20 +11,20 @@ There are two entry-point scripts:
 First download the dataset from
 http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
 
-To test the training code using the first GPU on your system, use
+## Train 
+To use the training code using a gpu on your system, use
 something like:
 
-    run matlab/vl_setupnn
-    addpath examples/dcgan
     opts.train.gpus = 1 ;
     dcgan_train(opts) ;
     
+## Generate 
+
     % load trained network
     d = dir(fullfile(opts.expDir,'net-epoch-*.mat'));
     load(fullfile(opts.expDir,d(end).name));
     netG = dagnn.DagNN.loadobj(netG);
     opts.network = netG ; 
-    opts = rmfield(opts,'train') ;
     opts.gpu = 1 ;
     dcgan_generate(opts) ;
 
