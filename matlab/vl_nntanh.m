@@ -1,4 +1,4 @@
-function out = vl_nnsigmoid(x,dzdy)
+function out = vl_nntanh(x,dzdy)
 % VL_NNTANH CNN tanh unit.
 %   Y = VL_NNTANH(X) computes the tanh of the data X. X can
 %   have an arbitrary size. The sigmoid is defined as follows:
